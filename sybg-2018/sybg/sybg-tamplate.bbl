@@ -1,0 +1,26 @@
+\begin{thebibliography}{1}
+
+\bibitem{DBLP}
+{T}he {DBLP} {C}omputer {S}cience {B}ibliography.
+\newblock \url{http://www.informatik.uni-trier.de/~ley/db/index.html}, 2011.
+
+\bibitem{Li1985}
+Guojie Li.
+\newblock {\it {P}arallel {P}rocessing of {C}ombinatorial {S}earch {P}roblems}.
+\newblock {P}h.{D}. {T}hesis, School of Electrical and Computer Engineering,
+  Purdue University, West Lafayette, IN, Dec. 1985.
+
+\bibitem{JohnsonM09}
+Paul Johnson and Neeraj Mittal.
+\newblock {A} {D}istributed {T}ermination {D}etection {A}lgorithm for {D}ynamic
+  {A}synchronous {S}ystems.
+\newblock In {\it ICDCS 2009: Proceedings of the 29th IEEE International
+  Conference on Distributed Computing Systems}, pages 343--351, Montreal,
+  Qu{\'e}bec, Canada, Jun. 2009.
+
+\bibitem{distribute-attribute-smSc}
+王宇，方滨兴，吴博，宋林海，郭岩.
+\newblock 结合属性分布特征的模式匹配算法.
+\newblock {\it 中文信息学报}, 24(3):89--96, 2010.
+
+\end{thebibliography}
