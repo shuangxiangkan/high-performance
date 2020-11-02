@@ -62,3 +62,10 @@ After the control node receives the final calculation result from the calculatio
 We have the following table and flow chart
 ### Table and flow charts
 
+<div align=center><img src="images/table.png" width = "500" height = "400"  /></div>
+
+<div align=center><img src="images/flowchart1.png" width = "500" height = "250"  /></div>
+
+<div align=center><img src="images/flowchart2.png" width = "500" height = "250"  /></div>
+
+<div align=center><img src="images/flowchart3.png" width = "500" height = "250"  /></div>
