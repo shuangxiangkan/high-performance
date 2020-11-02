@@ -13,13 +13,13 @@ This project mainly describes the use of python language to simulate parallel an
 
 ### Experiment content
 
-Content: Given a natural number range 2-n, calculate how many prime numbers there are in the range and the time consumed by the entire calculation process
+**Content**: Given a natural number range 2-n, calculate how many prime numbers there are in the range and the time consumed by the entire calculation process
 
 
-Input: need to calculate the maximum number of prime numbers n
+**Input**: need to calculate the maximum number of prime numbers n
 
 
-Output: the total number of prime numbers in the range s and the total consumption time t
+**Output**: the total number of prime numbers in the range s and the total consumption time t
 
 ### Analysis
 
