@@ -35,10 +35,19 @@ This project mainly describes the use of python language to simulate parallel an
 
 This experiment is mainly implemented by Python language, which uses socket module, multithreading and message queue in Python language to simulate management node and calculation node. The management node is the client, and the calculation node is the server. There are 4 files in this experiment, respectively.
 
-1. File 20185227018Control.py as the management node
-2. File 20185227018Node.py file for the compute node
-3. The code file 20185227018.py that needs to be executed has two parameters, which are calculating the node number and the total number of nodes respectively
-4. Hosts.txt file that holds the IP addresses of all compute nodes
+1. File `20185227018Control.py` as the management node
+2. File `20185227018Node.py` file for the compute node
+3. The code file `20185227018.py` that needs to be executed has two parameters, which are calculating the node number and the total number of nodes respectively
+4. `hosts.txt` file that holds the IP addresses of all compute nodes
+
+
+The IP address of the management node will be according to the hosts. TXT to each compute node connection request, after the connection is successful, will need to perform the code file 20185227018. Py, compute node number, total number of computing nodes, and collect other computing node partial results of the IP address of the specific nodes (it is assumed that the node number is 1) sent to the corresponding IP address compute nodes. Since the code file is the same for each compute node, the compute task of each compute node determines its own effort based on its number and the total number of compute nodes. For this experiment calculation number of primes, adopts uniform subdivision method, namely according to the need to compute the natural number, the total number of divided by the total number of computing nodes, which sequentially evenly into the scope of the corresponding then calculated by the various nodes are calculated respectively within the scope of their corresponding number (the one problem is that will lead to unbalanced load, namely the more to the back of the figure, the greater the its corresponding calculation time will be long).
+
+
+In the process of running, the management node adopts multi-thread, that is, according to the number of IP addresses in hosts.txt, the corresponding threads are opened by loop respectively, and the corresponding threads are used to transfer relevant data. On all the compute nodes after passing the data, will open a thread to receive the final results, waiting for the compute node Numbers for 1 nodes (the compute nodes collect other local results and summary of the compute nodes) pass the final result to management node, node output the final calculated results by the management, namely the total number of primes, and output the total running time.
+
+
+Since the code of each compute node is the same, and the tasks of a compute node numbered 1 and a compute node numbered not 1 are different, different tasks need to be determined according to different node Numbers. When the compute node is running, it first starts a thread to receive the data from the control node, and passes its number and total number of compute nodes as parameters to the code file 20185227018.py to execute and get the calculated results. Then decide on your next task based on your number.
 
 ### Table and flow charts
 
