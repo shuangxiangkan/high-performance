@@ -35,10 +35,10 @@ This project mainly describes the use of python language to simulate parallel an
 
 This experiment is mainly implemented by Python language, which uses socket module, multithreading and message queue in Python language to simulate management node and calculation node. The management node is the client, and the calculation node is the server. There are 4 files in this experiment, respectively.
 
-1.File 20185227018Control.py as the management node
-2.File 20185227018Node.py file for the compute node
-3.The code file 20185227018.py that needs to be executed has two parameters, which are calculating the node number and the total number of nodes respectively
-4.Hosts.txt file that holds the IP addresses of all compute nodes
+1. File 20185227018Control.py as the management node
+2. File 20185227018Node.py file for the compute node
+3. The code file 20185227018.py that needs to be executed has two parameters, which are calculating the node number and the total number of nodes respectively
+4. Hosts.txt file that holds the IP addresses of all compute nodes
 
 ### Table and flow charts
 
