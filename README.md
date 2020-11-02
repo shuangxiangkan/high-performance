@@ -49,5 +49,16 @@ In the process of running, the management node adopts multi-thread, that is, acc
 
 Since the code of each compute node is the same, and the tasks of a compute node numbered 1 and a compute node numbered not 1 are different, different tasks need to be determined according to different node Numbers. When the compute node is running, it first starts a thread to receive the data from the control node, and passes its number and total number of compute nodes as parameters to the code file 20185227018.py to execute and get the calculated results. Then decide on your next task based on your number.
 
+
++ Node number is 1, in addition to open a thread to receive data from the control node, and constantly monitor other computing nodes will send me partial results, if listening to have over other local calculation results, just open a thread to receive the local calculations, and place it in the message queue. At the same time, after their own calculation task is completed, the results are also put into the message queue. Finally, the total number of messages in the message queue is compared with the total number of all calculated nodes, if equal. Then take out and add all the results in the message queue to get the total prime number. And sends it to the control node. The corresponding thread is then terminated and waits for the next computation task.
+
+
++ The node number is not 1. After completing the corresponding calculation, open a client socket according to the IP address of node number 1 passed by the control node to connect the calculation node number \ TEXTBF {1} and pass the calculation result to it. The thread then terminates and waits for the next computation task.
+
+
+After the control node receives the final calculation result from the calculation node numbered 1, it outputs the calculation result. The receiving thread terminates. At the same time, the total calculation time is displayed and the control node program ends.
+
+
+We have the following table and flow chart
 ### Table and flow charts
 
